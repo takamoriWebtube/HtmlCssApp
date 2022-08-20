@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>HTML・CSS実践講座</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <div class="header-left-area">
+                <h1>KATAKATA-GYM</h1>
+            </div>
+            <div class="header-right-area">
+                <button class="login-button">ログイン</button>
+                <button class="register-button">新規登録</button>
+            </div>
+        </div>
+    </header>
+    <div class="main-img">
+        <div class="main-img-inner">
+            <p class="main-img-text">
+                HTML・CSS実践講座
+            </p>
+        </div>
+    </div>
+    <div class="fixed-img">
+        <div class="fixed-img-box">
+            <div class="fixed-img-box-inner">
+                <article id="recuture-1" class="recuture current">
+                    <div class="fixed-img-box-top">
+                        <p class="fixed-img-box-top-text">
+                            皆さんこんにちは！タカモリです。今日はこちらのサイトを作っていきましょう！
+                        </p>
+                        <p class="fixed-img-box-top-text">
+                            僕もこのような機会は初めてなので、不備があったらごめんなさい。。
+                        </p>
+                    </div>
+                    <div class="fixed-img-box-bottom">
+                        <p class="fixed-img-box-top-text"> では、Let'sコーディング！</p>
+                    </div>
+                    <div class="next">
+                        <button
+                            id="next-button"
+                            onclick="buttonClick()"
+                            class="allow">▷
+                        </button>
+                    </div>
+                </article>
+                <article id="recuture-2" class="recuture">
+                    <div class="fixed-img-box-top">
+                        <p class="fixed-img-box-top-text">
+                            本日の流れ
+                        </p>
+                        <ol class="fixed-img-box-top-list">
+                            <li class="fixed-img-box-top-list-item">
+                                HTMLとCSSについて
+                                <div>参考: <a href="https://katakata-gym.com/blog/nCrg83IndzDXzYde0Qk5">HTMLとは</a></div>
+                            </li>
+                            <li class="fixed-img-box-top-list-item">
+                                実際のコーディング
+                                <div>
+                                    emetについて(! + tab)
+                                </div>
+                                <div>
+                                    METAタグについて
+                                </div>
+                                <div>
+                                    画像の種類(PNG・SVG)
+                                </div>
+                                <div>
+                                    WEBフォントの種類
+                                </div>
+                                <div>
+                                    比較的新しいHTMLタグ(section・article)
+                                </div>
+                            </li>
+                            <li class="fixed-img-box-top-list-item">
+                                最近の開発状況や技術について(Sassやその他フレームワーク)
+                            </li>
+                            <li class="fixed-img-box-top-list-item">
+                                アンケートとカタカタジムからのお願い
+                                <div>参考: <a href="https://docs.google.com/forms/d/1mJZxH9G1d1qj3MD_CKOX5K57ayn6d-v-BK2Ua1WU4zQ/edit">Googleアンケート</a></div>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="next">
+                        <button
+                            id="prev-button"
+                            onclick="buttonClick()"
+                            class="allow">◁</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <main class="main">
+            <section class="events">
+                <h2>イベント一覧</h2>
+                <ul class="main-photo-card-list">
+                    <li class="main-photo-card-item">
+                        <div class="main-photo-card-item-left">
+                            <img class="main-photo-card-img" src="https://unsplash.it/630/400" alt="placeholder" />
+                        </div>
+                        <div class="main-photo-card-item-right">
+                            <h3 class="main-photo-card-title lines-omitted">
+                                カードタイトル
+                            </h3>
+                            <p class="main-photo-card-text multiple-lines-omitted-4">
+                                カードテキストカードテキストカードテキストカードテキストカードテキス
+                            </p>
+                            <div class="main-card-date">
+                                2022/12/12
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-photo-card-item">
+                        <div class="main-photo-card-item-left">
+                            <img class="main-photo-card-img" src="https://unsplash.it/630/400" alt="placeholder" />
+                        </div>
+                        <div class="main-photo-card-item-right">
+                            <h3 class="main-photo-card-title lines-omitted">
+                                カードタイトル
+                            </h3>
+                            <p class="main-photo-card-text multiple-lines-omitted-4">
+                                カードテキストカードテキストカードテキストカードテキストカードテキス
+                            </p>
+                            <div class="main-card-date">
+                                2022/12/12
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="blogs">
+                <h2>ブログ一覧</h2>
+                <ul class="main-card-list">
+                    <li class="main-card-item">
+                        <h3 class="main-card-title lines-omitted">
+                            カードタイトル
+                        </h3>
+                        <p class="main-card-text multiple-lines-omitted">
+                            カードテキストカードテキストカードテキストカードテキストカードテキスト
+                        </p>
+                        <div class="main-card-date">
+                            2022/12/12
+                        </div>
+                    </li>
+                    <li class="main-card-item">
+                        <h3 class="main-card-title lines-omitted">
+                            カードタイトル
+                        </h3>
+                        <p class="main-card-text multiple-lines-omitted-2">
+                            カードテキストカードテキストカードテキストカードテキストカードテキスト
+                        </p>
+                        <div class="main-card-date">
+                            2022/12/12
+                        </div>
+                    </li>
+                    <li class="main-card-item">
+                        <h3 class="main-card-title lines-omitted">
+                            カードタイトル
+                        </h3>
+                        <p class="main-card-text multiple-lines-omitted-2">
+                            カードテキストカードテキストカードテキストカードテキストカードテキスト
+                        </p>
+                        <div class="main-card-date">
+                            2022/12/12
+                        </div>
+                    </li>
+                    <li class="main-card-item">
+                        <h3 class="main-card-title lines-omitted">
+                            カードタイトル
+                        </h3>
+                        <p class="main-card-text multiple-lines-omitted-2">
+                            カードテキストカードテキストカードテキストカードテキストカードテキスト
+                        </p>
+                        <div class="main-card-date">
+                            2022/12/12
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <aside class="aside">
+            <h3 class="aside-title">おすすめの記事</h3>
+            <ul class="aside-card-list">
+                <li class="aside-card-item">
+                    <h3 class="aside-card-title lines-omitted">
+                        カードタイトル
+                    </h3>
+                    <p class="aside-card-text multiple-lines-omitted">
+                        カードテキストカードテキストカードテキストカードテキストカードテキスト
+                    </p>
+                    <div class="aside-card-date">
+                        2022/12/12
+                    </div>
+                </li>
+                <li class="aside-card-item">
+                    <h3 class="aside-card-title lines-omitted">
+                        カードタイトル
+                    </h3>
+                    <p class="aside-card-text multiple-lines-omitted">
+                        カードテキストカードテキストカードテキストカードテキストカードテキスト
+                    </p>
+                    <div class="aside-card-date">
+                        2022/12/12
+                    </div>
+                </li>
+                <li class="aside-card-item">
+                    <h3 class="aside-card-title lines-omitted">
+                        カードタイトル
+                    </h3>
+                    <p class="aside-card-text multiple-lines-omitted">
+                        カードテキストカードテキストカードテキストカードテキストカードテキスト
+                    </p>
+                    <div class="aside-card-date">
+                        2022/12/12
+                    </div>
+                </li>
+            </ul>
+        </aside>
+    </div>
+    <footer class="footer">
+        <div class="footer-inner">
+            <span class="copy-right">© 2022 KATAKATA.</span>
+        </div>
+    </footer>
+    <script>
+        const toggle = false
+        const recuture1 = document.getElementById('recuture-1')
+        const recuture2 = document.getElementById('recuture-2')
+        const buttonClick = () => {
+            recuture1.classList.toggle('current')
+            recuture2.classList.toggle('current')
+        }
+    </script>
+</body>
+</html>
